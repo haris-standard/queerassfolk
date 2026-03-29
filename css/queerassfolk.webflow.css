@@ -447,6 +447,7 @@ label {
   align-items: flex-start;
   padding: .6rem 21px 1.4rem;
   display: flex;
+  text-align: justify;
 }
 
 .text-effect-tx {
