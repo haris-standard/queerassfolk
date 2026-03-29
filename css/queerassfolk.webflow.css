@@ -3,7 +3,7 @@
   src: url('../fonts/WorkSans-Medium.woff2') format("woff2");
   font-weight: 500;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   src: url('../fonts/WorkSans-SemiBold.woff2') format("woff2");
   font-weight: 600;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   src: url('../fonts/WorkSans-Regular.woff2') format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   src: url('../fonts/Anton-Regular.woff2') format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
@@ -2544,48 +2544,4 @@ label {
   #w-node-_69ea237e-4a40-b8d4-ce37-308f51008d58-f8dc53d6 {
     grid-area: span 1 / span 2 / span 1 / span 2;
   }
-}
-
-
-@font-face {
-  font-family: 'Worksans';
-  src: url('../fonts/WorkSans-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: 'Worksans';
-  src: url('../fonts/WorkSans-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: 'Worksans';
-  src: url('../fonts/WorkSans-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: 'Anton';
-  src: url('../fonts/Anton-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: 'Egfolkfishtail Rough';
-  src: url('../fonts/EGFolkFishtail-Rough.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Egfolkfishtail Roughoutline';
-  src: url('../fonts/EGFolkFishtail-RoughOutline.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
 }

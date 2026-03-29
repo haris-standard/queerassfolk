@@ -24,6 +24,7 @@
 history.scrollRestoration = "manual";
 </script>
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css">
+  <link rel="prefetch" href="https://www.goodnessdigital.co.nz">
   <style>
   [data-start="hidden"] {
     visibility: hidden;
@@ -324,7 +325,7 @@ addEventListener("GSAPReady", (event) => {
             </a>
           </div>
           <div data-hero="alpha" class="hero-btn-w">
-            <a data-module="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdDqVOt-S6RNrQvQUo3g_4Q8mkBtbGZq19Ur3qYIcwAIMusNA/viewform" target="_blank" class="btn-link white w-inline-block">
+            <a data-module="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdDqVOt-S6RNrQvQUo3g_4Q8mkBtbGZq19Ur3qYIcwAIMusNA/viewform" target="_blank" rel="noopener noreferrer" class="btn-link white w-inline-block">
               <div class="overflow">
                 <div class="text-block-2">Apply to Play!</div>
               </div>
@@ -463,7 +464,8 @@ addEventListener("GSAPReady", (event) => {
     if (stripesAnimation) {
       stripesAnimation.kill();
     }
-    document.querySelector("video").play();
+    const vid = document.querySelector("video");
+    if (vid) vid.play().catch(() => {});
     gsap.set(heroStripes, {
       autoAlpha: 1,
       x: (i) => calcX(i),
@@ -611,9 +613,9 @@ addEventListener("GSAPReady", (event) => {
           <div class="layer"></div>
           <div class="comp _2">
             <div class="code-embed _1 w-embed w-iframe">
-              <div style="width:100%; text-align:left; -webkit-overflow-scrolling: touch;"><iframe src="https://www.outsavvy.com/calendar/4084" frameborder="0" height="480" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe>
+              <div style="width:100%; text-align:left; -webkit-overflow-scrolling: touch;"><iframe src="https://www.outsavvy.com/calendar/4084" height="480" width="100%" title="Outsavvy event calendar for Queer Ass Folk" style="border:none;"></iframe>
                 <div style="font-family: Helvetica, Arial;font-size: 18px;padding: 5px 0 5px;margin: 2px;width: 100%;text-align: right;line-height: 18px;display: flex;justify-content: right;">
-                  <a style="color: #270F03;text-decoration: none;display: flex; align-items: center;" target="_blank" href="https://www.outsavvy.com/">Tickets by <img itemprop="logo" class="" src="https://cdn.outsavvy.com/website/outsavvy-logo-white.png" alt="OutSavvy - Discover events and book tickets. Buy tickets quickly and securely" style="width: 110px; height: auto; margin-left: 5px;"></a>
+                  <a style="color: #270F03;text-decoration: none;display: flex; align-items: center;" target="_blank" rel="noopener noreferrer" href="https://www.outsavvy.com/">Tickets by <img itemprop="logo" class="" src="https://cdn.outsavvy.com/website/outsavvy-logo-white.png" alt="OutSavvy - Discover events and book tickets. Buy tickets quickly and securely" style="width: 110px; height: auto; margin-left: 5px;"></a>
                 </div>
               </div>
             </div>
@@ -664,7 +666,7 @@ addEventListener("GSAPReady", (event) => {
                   <div class="text-effect-tx">About Queer Ass Folk</div>
                 </div>
                 <div class="spacer"></div>
-                <p class="par-base _w-ch left">Queer Ass Folk is more than a gig night – it’s a space for connection, celebration, and queer joy.<br><br>Born in Hastings and now reaching new heights, we centre LGBTQ+ voices, champion accessibility, and build community through live music. This site is your gateway into the world of QAF – packed with artist showcases, event highlights, and the tools to get involved.<br><br>Come as you are, stay as long as you like, and join us in redefining what a music night can be. We’re here, we’re loud (sometimes), and we’re building something beautiful together.<br><br>You can also find us on <a href="https://www.instagram.com/queerassfolkmusic/" target="_blank">Instagram</a>.</p>
+                <p class="par-base _w-ch left">Queer Ass Folk is more than a gig night – it’s a space for connection, celebration, and queer joy.<br><br>Born in Hastings and now reaching new heights, we centre LGBTQ+ voices, champion accessibility, and build community through live music. This site is your gateway into the world of QAF – packed with artist showcases, event highlights, and the tools to get involved.<br><br>Come as you are, stay as long as you like, and join us in redefining what a music night can be. We’re here, we’re loud (sometimes), and we’re building something beautiful together.<br><br>You can also find us on <a href="https://www.instagram.com/queerassfolkmusic/" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
                 <div class="code-block w-embed w-script">
                   <script>
 {
@@ -949,7 +951,7 @@ addEventListener("GSAPReady", (event) => {
                     </a>
                   </li>
                   <li>
-                    <a href="https://drive.google.com/drive/u/2/folders/1FuZu6qhzVQH_gHqKHHOGjCw7GQgPflWI" target="_blank" class="link-li-w footer w-inline-block">
+                    <a href="https://drive.google.com/drive/u/2/folders/1FuZu6qhzVQH_gHqKHHOGjCw7GQgPflWI" target="_blank" rel="noopener noreferrer" class="link-li-w footer w-inline-block">
                       <div>Press kit</div>
                     </a>
                   </li>
@@ -963,10 +965,9 @@ addEventListener("GSAPReady", (event) => {
               <div class="col-half items-r">
                 <div class="op-70">
                   <div class="op-7">&copy;<script>document.write(new Date().getFullYear())</script></div>
-                  <a href="https://www.goodnessdigital.co.nz" target="_blank" class="ext-link w-inline-block">
+                  <a href="https://www.goodnessdigital.co.nz" target="_blank" rel="noopener noreferrer" class="ext-link w-inline-block">
                     <div>Site by GOODNESS DIGITAL.</div>
                   </a>
-                  <link rel="prefetch" href="https://www.goodnessdigital.co.nz">
                 </div>
               </div>
             </div>
@@ -1061,22 +1062,11 @@ addEventListener("GSAPReady", (event) => {
     const copybtn = [...document.querySelectorAll("[data-module='copybtn']")];
     // Create a map to store data for each button
     const buttonDataMap = new Map();
-    // Single event listener that checks which button's data to use
-    document.addEventListener("copy", (event) => {
-      const activeButtonData = buttonDataMap.get("active");
-      if (activeButtonData) {
-        event.preventDefault();
-        event.clipboardData.setData(
-          "application/json",
-          JSON.stringify(activeButtonData)
-        );
-        event.clipboardData.setData(
-          "text/plain",
-          JSON.stringify(activeButtonData)
-        );
-        buttonDataMap.delete("active"); // Clear after copying
-      }
-    });
+    // Copy helper using modern Clipboard API
+    const copyToClipboard = async (data) => {
+      const text = JSON.stringify(data);
+      await navigator.clipboard.writeText(text);
+    };
     copybtn.forEach((btn) => {
       const url = btn.getAttribute("data-copy");
       const text = btn.children[0].children[0];
@@ -1097,14 +1087,13 @@ addEventListener("GSAPReady", (event) => {
           const res = await fetch(url);
           let data = await res.text();
           // Try to parse as JSON in case it's JSON data
+          let copyData;
           try {
-            const jsonData = JSON.parse(data);
-            buttonDataMap.set("active", jsonData);
+            copyData = JSON.parse(data);
           } catch {
-            buttonDataMap.set("active", data);
+            copyData = data;
           }
-          // Trigger the copy command
-          document.execCommand("copy");
+          await copyToClipboard(copyData);
           text.textContent = "Copied!";
           console.log("copied successfully");
           setTimeout(() => {
