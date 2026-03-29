@@ -2490,6 +2490,7 @@ label {
   .flip-item-2 {
     grid-column-gap: .2rem;
     grid-row-gap: .2rem;
+    padding: .5rem;
   }
 
   .comp-2, .comp-3 {
