@@ -590,6 +590,15 @@ label {
   overflow: clip;
 }
 
+.photo-caption {
+  font-family: Worksans, Arial, sans-serif;
+  font-size: .875rem;
+  line-height: 1.375em;
+  color: var(--primary);
+  margin: 0;
+  padding-top: .5rem;
+}
+
 .flip-item.is-2 {
   background-color: #ff812d;
 }
