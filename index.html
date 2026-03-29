@@ -1338,17 +1338,23 @@ addEventListener("GSAPReady", (event) => {
       });
     }
     /** We need specific handling because the
-     * grid/list changes the scroll height of the whole container
+     * grid/list changes the scroll height of the whole container.
+     * Ignore small height-only changes (iOS Safari toolbar show/hide)
+     * to prevent scroll jumps.
      */
     let resizeTimeout;
-    const onResize = () => {
+    let lastWidth = window.innerWidth;
+    const onResize = (force) => {
+      const newWidth = window.innerWidth;
+      if (!force && newWidth === lastWidth) return;
+      lastWidth = newWidth;
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
         ScrollTrigger.refresh();
-      }, 50);
+      }, 250);
     };
-    window.addEventListener("resize", () => onResize());
-    const resizeObserver = new ResizeObserver((entries) => onResize());
+    window.addEventListener("resize", () => onResize(false));
+    const resizeObserver = new ResizeObserver(() => onResize(false));
     resizeObserver.observe(document.body);
     queueMicrotask(() => {
       gsap.to("[data-start='hidden']", {
