@@ -694,8 +694,7 @@ const baseAnimation = (item) => {
     },
     scrollTrigger: {
       trigger: item,
-      // use scrolltrigger to trigger on enter and reset on exit
-      toggleActions: "play reset play reset",
+      toggleActions: "play none play reset",
     },
   };
 };
