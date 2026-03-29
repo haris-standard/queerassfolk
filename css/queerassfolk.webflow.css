@@ -2146,6 +2146,10 @@ label {
     padding: .75rem;
   }
 
+  .photo-caption {
+    font-size: .75rem;
+  }
+
   .flip-list-w {
     grid-column-gap: .2rem;
     grid-row-gap: .2rem;
@@ -2368,6 +2372,11 @@ label {
 
   .flip-item.is-3 {
     overflow: visible;
+  }
+
+  .photo-caption {
+    font-size: .75rem;
+    padding-top: .25rem;
   }
 
   .flip-list-w {
